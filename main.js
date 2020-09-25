@@ -11,7 +11,7 @@ const titleLength = titleRect.right;
 const titleRatio = titleLength / window.innerWidth * 100;
 const centreX = titleLength, centreY = window.innerHeight / 2;
 
-subtitleDiv.style.width=`${(titleRect.x+titleRect.width)*0.85}px`;
+subtitleDiv.style.width=`${(titleRect.x+titleRect.width)*0.85*0.95}px`;
 
 // initiate background colour
 ele.style.background = `conic-gradient(from 1.75turn at ${titleRatio}% 50%, 
