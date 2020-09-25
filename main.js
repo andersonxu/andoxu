@@ -20,7 +20,7 @@ ele.style.background = `conic-gradient(from 1.75turn at ${titleRatio}% 50%,
     #ffffff, 140deg, 
     #444444, 
     #000000)`;
-title.style.textShadow = '10px 10px 3px #444444';
+title.style.textShadow = '-5px 5px 3px #444444';
 var degree = -90;
 
 document.addEventListener('mousemove', (info) => {
