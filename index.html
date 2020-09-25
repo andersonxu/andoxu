@@ -3,9 +3,13 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
     <style>
-        html {
-            min-height: 100%;
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden
         }
 
         #title {
@@ -14,23 +18,21 @@
             left: 0%;
             transform: translate(20%, -150%);
             font-family: 'Cormorant', serif;
-            color: #fff;
+            color: #ddd;
             font-size: 3em;
         }
 
         #subtitle {
-            position: absolute;
-            top: 50%;
-            left: 0%;
-            transform: translate(100%, -50%);
-            font-family: 'Cormorant', serif;
+            text-align: right;
+            display: flex;
+            flex-wrap: wrap;
             font-size: 1.5em;
-
+            font-family: 'Cormorant', serif;
             /* Fallback: Set a background color. */
-            background-color: red;
+            background-color: rgb(199, 199, 199);
 
             /* Create the gradient. */
-            background-image: linear-gradient(90deg, rgba(23,23,23,1) 0%, rgba(115,115,115,1) 100%);
+            background-image: linear-gradient(135deg, rgb(175, 175, 175) 0%, rgb(99, 99, 99) 100%);
 
             /* Set the background size and repeat properties. */
             background-size: 100%;
@@ -43,13 +45,25 @@
             -moz-background-clip: text;
             -moz-text-fill-color: transparent;
         }
+
+        #subtitleDiv {
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            transform: translate(0%, 0%);
+            word-wrap: break-word;
+        }
     </style>
 </head>
 
 <body>
     <h1 id="title">PANOPTICON</h1>
-    <h2 id="subtitle">Visibility is a trap</h2>
-    <script src="index.js"></script>
+    <div id="subtitleDiv">
+        <h2 id="subtitle">“Le supplice ne rétablissait pas la justice, il réactivait le pouvoir.”<br>― Michel Foucault
+        </h2>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
