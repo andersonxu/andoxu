@@ -4,14 +4,15 @@ const title = document.getElementById("title");
 const subtitleDiv=document.getElementById("subtitleDiv");
 // get title attributes
 const titleRect = title.getBoundingClientRect();
+console.log(titleRect);
 const titleX = titleRect.x + titleRect.width / 2,
     titleY = titleRect.y + titleRect.height / 2;
-const titleLength = titleRect.x + titleRect.width;
+const titleLength = titleRect.right*0.98;
 const titleRatio = titleLength / window.innerWidth * 100;
 const centreX = titleLength, centreY = window.innerHeight / 2;
 
 console.log(subtitleDiv.style.width);
-subtitleDiv.style.width=`${titleRect.x+titleRect.width}px`;
+subtitleDiv.style.width=`${(titleRect.x+titleRect.width)*0.95}px`;
 console.log(subtitleDiv.style.width);
 
 
