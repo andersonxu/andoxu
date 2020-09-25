@@ -42,6 +42,25 @@
             word-wrap: break-word;
         }
 
+        #content::-webkit-scrollbar {
+            display: none;
+        }
+
+        #content {
+            position: absolute;
+            height: 80%;
+            top: 15%;
+            left: 50%;
+            width: 50%;
+            transform: translate(-5%, 0%);
+            font-size: 3em;
+            text-align: justify;
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+
         @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
             #title {
                 transform: translate(5%, -150%);
@@ -51,12 +70,34 @@
 </head>
 
 <body>
-    <h1 id="title">PANOPTICON</h1>
+    <a href="https://www.andoxu.com/">
+        <h1 id="title">PANOPTICON</h1>
+    </a>
     <div id="subtitleDiv">
         <h2 id="subtitle">“Le supplice ne rétablissait pas la justice, il réactivait le pouvoir.”<br>― Michel Foucault
         </h2>
     </div>
-
+    <div id="navigate"></div>
+    <div id="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum soluta ipsam obcaecati quam quia.
+        Et nam soluta aliquam excepturi voluptatibus in exercitationem facilis ipsum fugit quisquam, ducimus inventore
+        ex magnam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt rem ea ipsam eveniet autem
+        voluptatem distinctio inventore aliquid quis, tempora tenetur tempore earum sapiente, quo praesentium unde totam
+        ratione!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quis non incidunt nihil reiciendis odit.
+        Dolor accusamus quo consectetur odit animi architecto, ipsum cupiditate adipisci corporis reprehenderit ex
+        omnis! Consequuntur.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque impedit distinctio quos eaque est nesciunt sunt
+        hic laudantium nihil id possimus temporibus adipisci voluptatibus, rem, reiciendis itaque aliquid mollitia ut?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dicta vero, sint at autem laborum ducimus
+        ratione, doloribus nulla deleniti recusandae obcaecati quis asperiores. Possimus nihil repudiandae ea
+        consequuntur consectetur!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus optio, cupiditate nobis vitae, quo iste,
+        consequatur vel rem rerum tempora eos repellendus ea voluptatem adipisci iure aperiam repudiandae suscipit esse?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non pariatur reiciendis, aliquid possimus accusantium
+        alias modi veniam eligendi cumque voluptas ducimus ad est, vero magni, similique numquam vitae. Recusandae,
+        atque.
+    </div>
     <script src="main.js"></script>
 </body>
 
