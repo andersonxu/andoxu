@@ -34,8 +34,7 @@ document.addEventListener('mousemove', (info) => {
         }
     }
     ele.style.background = `conic-gradient(from 1.75turn at ${titleRatio}% 50%,
-         #ffffff,1deg,
-         #bbbbbb,2deg, 
+         #bbbbbb, 
          #aaaaaa, ${173 + degree}deg, 
          #ffffff, ${185 + degree}deg, 
          #777777,
