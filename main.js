@@ -12,7 +12,7 @@ const titleRatio = titleLength / window.innerWidth * 100;
 const centreX = titleLength, centreY = window.innerHeight / 2;
 
 console.log(subtitleDiv.style.width);
-subtitleDiv.style.width=`${(titleRect.x+titleRect.width)*0.95}px`;
+subtitleDiv.style.width=`${(titleRect.x+titleRect.width)*0.95*0.85}px`;
 console.log(subtitleDiv.style.width);
 
 

@@ -21,11 +21,7 @@
             transform: translate(5%, -150%);
             font-size: 3em;
         }
-        @media screen and (min-width: 800px) {
-            #title {
-                transform: translate(40%, -150%);
-            }
-        }
+
 
         #subtitle {
             text-align: right;
@@ -33,7 +29,7 @@
             flex-wrap: wrap;
             font-size: 1.5em;
             font-family: 'Cormorant', serif;
-
+            transform: translate(20%, 0%);
             background-color: #818181;
             -webkit-background-clip: text;
             -moz-background-clip: text;
@@ -48,6 +44,12 @@
             left: 0%;
             transform: translate(0%, 0%);
             word-wrap: break-word;
+        }
+
+        @media screen and (min-width: 800px) {
+            #title {
+                transform: translate(40%, -150%);
+            }
         }
     </style>
 </head>
